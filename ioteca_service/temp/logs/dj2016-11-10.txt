@@ -1,0 +1,309 @@
+[2016-11-10 16:00:56] DEBUG [django.db.backends:89] (0.025) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[2016-11-10 16:00:56] DEBUG [django.db.backends:89] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[2016-11-10 16:01:12] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-11-10 16:01:12.898934' AND "django_session"."session_key" = '9ibi74thpct465d68na662z6tdjft1xa'); args=('2016-11-10 16:01:12.898934', '9ibi74thpct465d68na662z6tdjft1xa')
+[2016-11-10 16:01:13] DEBUG [django.template:927] Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'None': None, 'True': True, 'False': False}, {'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f3d04ce7c50>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7f3d06f14b70>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f3d04c71da0>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f3d04ce7a58>>, 'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>, 'DEFAULT_MESSAGE_LEVELS': {'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40, 'DEBUG': 10, 'INFO': 20}}, {}, {'LANGUAGE_BIDI': False, 'next': '/admin/', 'site': <django.contrib.sites.requests.RequestSite object at 0x7f3d04c43898>, 'title': 'Log in', 'LANGUAGE_CODE': 'en-us', 'app_path': '/admin/login/?next=/admin/', 'site_header': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d08d8c438>, 'site_name': 'localhost:9001', 'has_permission': False, 'site_url': '/', 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'available_apps': [], 'site_title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d08df0588>}]"
+[2016-11-10 16:01:13] DEBUG [django.template:927] Exception while resolving variable 'is_popup' in template 'admin/login.html'.
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'None': None, 'True': True, 'False': False}, {'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f3d04ce7c50>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7f3d06f14b70>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f3d04c71da0>, 'user': <SimpleLazyObject: <django.contrib.auth.models.AnonymousUser object at 0x7f3d04ce7a58>>, 'request': <WSGIRequest: GET '/admin/login/?next=/admin/'>, 'DEFAULT_MESSAGE_LEVELS': {'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40, 'DEBUG': 10, 'INFO': 20}}, {}, {'LANGUAGE_BIDI': False, 'next': '/admin/', 'site': <django.contrib.sites.requests.RequestSite object at 0x7f3d04c43898>, 'title': 'Log in', 'LANGUAGE_CODE': 'en-us', 'app_path': '/admin/login/?next=/admin/', 'site_header': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d08d8c438>, 'site_name': 'localhost:9001', 'has_permission': False, 'site_url': '/', 'form': <AdminAuthenticationForm bound=False, valid=Unknown, fields=(username;password)>, 'available_apps': [], 'site_title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d08df0588>}]"
+[2016-11-10 16:01:19] DEBUG [django.db.backends:89] (0.002) SELECT "auths_user"."password", "auths_user"."last_login", "auths_user"."is_superuser", "auths_user"."username", "auths_user"."first_name", "auths_user"."last_name", "auths_user"."email", "auths_user"."is_staff", "auths_user"."is_active", "auths_user"."date_joined", "auths_user"."id", "auths_user"."last_hierarchy_id", "auths_user"."last_module_id", "auths_user"."person_id", "auths_user"."updated_at", "auths_user"."registered_by" FROM "auths_user" WHERE "auths_user"."username" = 'admin'; args=('admin',)
+[2016-11-10 16:01:20] DEBUG [django.db.backends:89] (0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = 'lplekugdzviq75gvfeo0b8p2ri0wswaw' LIMIT 1; args=('lplekugdzviq75gvfeo0b8p2ri0wswaw',)
+[2016-11-10 16:01:20] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[2016-11-10 16:01:20] DEBUG [django.db.backends:89] (0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'lplekugdzviq75gvfeo0b8p2ri0wswaw', 'MWM0OGIyODQ4NzI4MzRhZjAyMjIxNmY1YzZlNzUwYmUzNTU2OWFjMTp7fQ==', '2016-11-24 16:01:20.096777'; args=('lplekugdzviq75gvfeo0b8p2ri0wswaw', 'MWM0OGIyODQ4NzI4MzRhZjAyMjIxNmY1YzZlNzUwYmUzNTU2OWFjMTp7fQ==', '2016-11-24 16:01:20.096777')
+[2016-11-10 16:01:20] DEBUG [django.db.backends:89] (0.000) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE "django_session"."session_key" = 'lplekugdzviq75gvfeo0b8p2ri0wswaw'; args=('lplekugdzviq75gvfeo0b8p2ri0wswaw',)
+[2016-11-10 16:01:20] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[2016-11-10 16:01:20] DEBUG [django.db.backends:89] (0.000) DELETE FROM "django_session" WHERE "django_session"."session_key" IN ('lplekugdzviq75gvfeo0b8p2ri0wswaw'); args=('lplekugdzviq75gvfeo0b8p2ri0wswaw',)
+[2016-11-10 16:01:20] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[2016-11-10 16:01:20] DEBUG [django.db.backends:89] (0.000) UPDATE "auths_user" SET "last_login" = '2016-11-10 16:01:20.357771' WHERE "auths_user"."id" = '4c7e4779b6bd47198afbd9e574b13d0a'; args=('2016-11-10 16:01:20.357771', '4c7e4779b6bd47198afbd9e574b13d0a')
+[2016-11-10 16:01:20] DEBUG [django.db.backends:89] (0.000) BEGIN; args=None
+[2016-11-10 16:01:20] DEBUG [django.db.backends:89] (0.000) UPDATE "django_session" SET "session_data" = 'ZGQyNGMwMmE0NDE3YmEwM2I5ZmRmNTkzZjkzMWMzMmUwZWQyYzFjYTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6IjRjN2U0Nzc5LWI2YmQtNDcxOS04YWZiLWQ5ZTU3NGIxM2QwYSIsIl9hdXRoX3VzZXJfaGFzaCI6IjU1N2Q0ZDRkNzk3ODU4ZGFiZGQ0YTQ5ZjYxZDA0ODM4NDAzNjk0ZmUifQ==', "expire_date" = '2016-11-24 16:01:20.433717' WHERE "django_session"."session_key" = 'lplekugdzviq75gvfeo0b8p2ri0wswaw'; args=('ZGQyNGMwMmE0NDE3YmEwM2I5ZmRmNTkzZjkzMWMzMmUwZWQyYzFjYTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6IjRjN2U0Nzc5LWI2YmQtNDcxOS04YWZiLWQ5ZTU3NGIxM2QwYSIsIl9hdXRoX3VzZXJfaGFzaCI6IjU1N2Q0ZDRkNzk3ODU4ZGFiZGQ0YTQ5ZjYxZDA0ODM4NDAzNjk0ZmUifQ==', '2016-11-24 16:01:20.433717', 'lplekugdzviq75gvfeo0b8p2ri0wswaw')
+[2016-11-10 16:01:20] DEBUG [django.db.backends:89] (0.000) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT 'lplekugdzviq75gvfeo0b8p2ri0wswaw', 'ZGQyNGMwMmE0NDE3YmEwM2I5ZmRmNTkzZjkzMWMzMmUwZWQyYzFjYTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6IjRjN2U0Nzc5LWI2YmQtNDcxOS04YWZiLWQ5ZTU3NGIxM2QwYSIsIl9hdXRoX3VzZXJfaGFzaCI6IjU1N2Q0ZDRkNzk3ODU4ZGFiZGQ0YTQ5ZjYxZDA0ODM4NDAzNjk0ZmUifQ==', '2016-11-24 16:01:20.433717'; args=('lplekugdzviq75gvfeo0b8p2ri0wswaw', 'ZGQyNGMwMmE0NDE3YmEwM2I5ZmRmNTkzZjkzMWMzMmUwZWQyYzFjYTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6IjRjN2U0Nzc5LWI2YmQtNDcxOS04YWZiLWQ5ZTU3NGIxM2QwYSIsIl9hdXRoX3VzZXJfaGFzaCI6IjU1N2Q0ZDRkNzk3ODU4ZGFiZGQ0YTQ5ZjYxZDA0ODM4NDAzNjk0ZmUifQ==', '2016-11-24 16:01:20.433717')
+[2016-11-10 16:01:20] DEBUG [django.db.backends:89] (0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2016-11-10 16:01:20.509163' AND "django_session"."session_key" = 'lplekugdzviq75gvfeo0b8p2ri0wswaw'); args=('2016-11-10 16:01:20.509163', 'lplekugdzviq75gvfeo0b8p2ri0wswaw')
+[2016-11-10 16:01:20] DEBUG [django.db.backends:89] (0.000) SELECT "auths_user"."password", "auths_user"."last_login", "auths_user"."is_superuser", "auths_user"."username", "auths_user"."first_name", "auths_user"."last_name", "auths_user"."email", "auths_user"."is_staff", "auths_user"."is_active", "auths_user"."date_joined", "auths_user"."id", "auths_user"."last_hierarchy_id", "auths_user"."last_module_id", "auths_user"."person_id", "auths_user"."updated_at", "auths_user"."registered_by" FROM "auths_user" WHERE "auths_user"."id" = '4c7e4779b6bd47198afbd9e574b13d0a'; args=('4c7e4779b6bd47198afbd9e574b13d0a',)
+[2016-11-10 16:01:20] DEBUG [django.template:927] Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'None': None, 'True': True, 'False': False}, {'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f3d04c6b080>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7f3d08e44e18>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f3d049f8dd8>, 'user': <SimpleLazyObject: <User: admin>>, 'request': <WSGIRequest: GET '/admin/'>, 'DEFAULT_MESSAGE_LEVELS': {'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40, 'DEBUG': 10, 'INFO': 20}}, {}, {'app_list': [{'app_url': '/admin/auth/', 'app_label': 'auth', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d08d8cf60>, 'has_module_perms': True, 'models': [{'add_url': '/admin/auth/group/add/', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6b518>, 'object_name': 'Group'}, {'add_url': '/admin/auth/permission/add/', 'admin_url': '/admin/auth/permission/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6b5c0>, 'object_name': 'Permission'}]}, {'app_url': '/admin/auths/', 'app_label': 'auths', 'name': 'Auths', 'has_module_perms': True, 'models': [{'add_url': '/admin/auths/hierarchytype/add/', 'admin_url': '/admin/auths/hierarchytype/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6ba58>, 'object_name': 'HierarchyType'}, {'add_url': '/admin/auths/hierarchy/add/', 'admin_url': '/admin/auths/hierarchy/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6b198>, 'object_name': 'Hierarchy'}, {'add_url': '/admin/auths/menu/add/', 'admin_url': '/admin/auths/menu/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6ba20>, 'object_name': 'Menu'}, {'add_url': '/admin/auths/person/add/', 'admin_url': '/admin/auths/person/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6bac8>, 'object_name': 'Person'}, {'add_url': '/admin/auths/userhierarchygroup/add/', 'admin_url': '/admin/auths/userhierarchygroup/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6b438>, 'object_name': 'UserHierarchyGroup'}, {'add_url': '/admin/auths/userhierarchypermission/add/', 'admin_url': '/admin/auths/userhierarchypermission/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6bb38>, 'object_name': 'UserHierarchyPermission'}, {'add_url': '/admin/auths/user/add/', 'admin_url': '/admin/auths/user/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6b9e8>, 'object_name': 'User'}]}, {'app_url': '/admin/contenttypes/', 'app_label': 'contenttypes', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d08d94710>, 'has_module_perms': True, 'models': [{'add_url': '/admin/contenttypes/contenttype/add/', 'admin_url': '/admin/contenttypes/contenttype/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6bb00>, 'object_name': 'ContentType'}]}, {'app_url': '/admin/oauth2_provider/', 'app_label': 'oauth2_provider', 'name': 'Django OAuth Toolkit', 'has_module_perms': True, 'models': [{'add_url': '/admin/oauth2_provider/accesstoken/add/', 'admin_url': '/admin/oauth2_provider/accesstoken/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6b2e8>, 'object_name': 'AccessToken'}, {'add_url': '/admin/oauth2_provider/application/add/', 'admin_url': '/admin/oauth2_provider/application/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6b908>, 'object_name': 'Application'}, {'add_url': '/admin/oauth2_provider/grant/add/', 'admin_url': '/admin/oauth2_provider/grant/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6bb70>, 'object_name': 'Grant'}, {'add_url': '/admin/oauth2_provider/refreshtoken/add/', 'admin_url': '/admin/oauth2_provider/refreshtoken/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6b2b0>, 'object_name': 'RefreshToken'}]}], 'LANGUAGE_BIDI': False, 'site_title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d08df0588>, 'site_url': '/', 'has_permission': True, 'available_apps': [{'app_url': '/admin/auth/', 'app_label': 'auth', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d08d8cf60>, 'has_module_perms': True, 'models': [{'add_url': '/admin/auth/group/add/', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6bd68>, 'object_name': 'Group'}, {'add_url': '/admin/auth/permission/add/', 'admin_url': '/admin/auth/permission/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6bef0>, 'object_name': 'Permission'}]}, {'app_url': '/admin/auths/', 'app_label': 'auths', 'name': 'Auths', 'has_module_perms': True, 'models': [{'add_url': '/admin/auths/hierarchytype/add/', 'admin_url': '/admin/auths/hierarchytype/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6bf28>, 'object_name': 'HierarchyType'}, {'add_url': '/admin/auths/hierarchy/add/', 'admin_url': '/admin/auths/hierarchy/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6bf98>, 'object_name': 'Hierarchy'}, {'add_url': '/admin/auths/menu/add/', 'admin_url': '/admin/auths/menu/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6bfd0>, 'object_name': 'Menu'}, {'add_url': '/admin/auths/person/add/', 'admin_url': '/admin/auths/person/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c710b8>, 'object_name': 'Person'}, {'add_url': '/admin/auths/userhierarchygroup/add/', 'admin_url': '/admin/auths/userhierarchygroup/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6bcc0>, 'object_name': 'UserHierarchyGroup'}, {'add_url': '/admin/auths/userhierarchypermission/add/', 'admin_url': '/admin/auths/userhierarchypermission/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6b550>, 'object_name': 'UserHierarchyPermission'}, {'add_url': '/admin/auths/user/add/', 'admin_url': '/admin/auths/user/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6b048>, 'object_name': 'User'}]}, {'app_url': '/admin/contenttypes/', 'app_label': 'contenttypes', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d08d94710>, 'has_module_perms': True, 'models': [{'add_url': '/admin/contenttypes/contenttype/add/', 'admin_url': '/admin/contenttypes/contenttype/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c71048>, 'object_name': 'ContentType'}]}, {'app_url': '/admin/oauth2_provider/', 'app_label': 'oauth2_provider', 'name': 'Django OAuth Toolkit', 'has_module_perms': True, 'models': [{'add_url': '/admin/oauth2_provider/accesstoken/add/', 'admin_url': '/admin/oauth2_provider/accesstoken/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6beb8>, 'object_name': 'AccessToken'}, {'add_url': '/admin/oauth2_provider/application/add/', 'admin_url': '/admin/oauth2_provider/application/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6bd30>, 'object_name': 'Application'}, {'add_url': '/admin/oauth2_provider/grant/add/', 'admin_url': '/admin/oauth2_provider/grant/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c71da0>, 'object_name': 'Grant'}, {'add_url': '/admin/oauth2_provider/refreshtoken/add/', 'admin_url': '/admin/oauth2_provider/refreshtoken/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6bf60>, 'object_name': 'RefreshToken'}]}], 'LANGUAGE_CODE': 'en-us', 'site_header': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d08d8c438>, 'title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d08d8c7f0>}]"
+[2016-11-10 16:01:20] DEBUG [django.template:927] Exception while resolving variable 'is_popup' in template 'admin/index.html'.
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/context.py", line 77, in __getitem__
+    raise KeyError(key)
+KeyError: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 889, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'is_popup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [is_popup] in "[{'None': None, 'True': True, 'False': False}, {'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x7f3d04c6b080>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x7f3d08e44e18>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x7f3d049f8dd8>, 'user': <SimpleLazyObject: <User: admin>>, 'request': <WSGIRequest: GET '/admin/'>, 'DEFAULT_MESSAGE_LEVELS': {'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40, 'DEBUG': 10, 'INFO': 20}}, {}, {'app_list': [{'app_url': '/admin/auth/', 'app_label': 'auth', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d08d8cf60>, 'has_module_perms': True, 'models': [{'add_url': '/admin/auth/group/add/', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6b518>, 'object_name': 'Group'}, {'add_url': '/admin/auth/permission/add/', 'admin_url': '/admin/auth/permission/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6b5c0>, 'object_name': 'Permission'}]}, {'app_url': '/admin/auths/', 'app_label': 'auths', 'name': 'Auths', 'has_module_perms': True, 'models': [{'add_url': '/admin/auths/hierarchytype/add/', 'admin_url': '/admin/auths/hierarchytype/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6ba58>, 'object_name': 'HierarchyType'}, {'add_url': '/admin/auths/hierarchy/add/', 'admin_url': '/admin/auths/hierarchy/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6b198>, 'object_name': 'Hierarchy'}, {'add_url': '/admin/auths/menu/add/', 'admin_url': '/admin/auths/menu/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6ba20>, 'object_name': 'Menu'}, {'add_url': '/admin/auths/person/add/', 'admin_url': '/admin/auths/person/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6bac8>, 'object_name': 'Person'}, {'add_url': '/admin/auths/userhierarchygroup/add/', 'admin_url': '/admin/auths/userhierarchygroup/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6b438>, 'object_name': 'UserHierarchyGroup'}, {'add_url': '/admin/auths/userhierarchypermission/add/', 'admin_url': '/admin/auths/userhierarchypermission/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6bb38>, 'object_name': 'UserHierarchyPermission'}, {'add_url': '/admin/auths/user/add/', 'admin_url': '/admin/auths/user/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6b9e8>, 'object_name': 'User'}]}, {'app_url': '/admin/contenttypes/', 'app_label': 'contenttypes', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d08d94710>, 'has_module_perms': True, 'models': [{'add_url': '/admin/contenttypes/contenttype/add/', 'admin_url': '/admin/contenttypes/contenttype/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6bb00>, 'object_name': 'ContentType'}]}, {'app_url': '/admin/oauth2_provider/', 'app_label': 'oauth2_provider', 'name': 'Django OAuth Toolkit', 'has_module_perms': True, 'models': [{'add_url': '/admin/oauth2_provider/accesstoken/add/', 'admin_url': '/admin/oauth2_provider/accesstoken/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6b2e8>, 'object_name': 'AccessToken'}, {'add_url': '/admin/oauth2_provider/application/add/', 'admin_url': '/admin/oauth2_provider/application/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6b908>, 'object_name': 'Application'}, {'add_url': '/admin/oauth2_provider/grant/add/', 'admin_url': '/admin/oauth2_provider/grant/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6bb70>, 'object_name': 'Grant'}, {'add_url': '/admin/oauth2_provider/refreshtoken/add/', 'admin_url': '/admin/oauth2_provider/refreshtoken/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6b2b0>, 'object_name': 'RefreshToken'}]}], 'LANGUAGE_BIDI': False, 'site_title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d08df0588>, 'site_url': '/', 'has_permission': True, 'available_apps': [{'app_url': '/admin/auth/', 'app_label': 'auth', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d08d8cf60>, 'has_module_perms': True, 'models': [{'add_url': '/admin/auth/group/add/', 'admin_url': '/admin/auth/group/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6bd68>, 'object_name': 'Group'}, {'add_url': '/admin/auth/permission/add/', 'admin_url': '/admin/auth/permission/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6bef0>, 'object_name': 'Permission'}]}, {'app_url': '/admin/auths/', 'app_label': 'auths', 'name': 'Auths', 'has_module_perms': True, 'models': [{'add_url': '/admin/auths/hierarchytype/add/', 'admin_url': '/admin/auths/hierarchytype/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6bf28>, 'object_name': 'HierarchyType'}, {'add_url': '/admin/auths/hierarchy/add/', 'admin_url': '/admin/auths/hierarchy/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6bf98>, 'object_name': 'Hierarchy'}, {'add_url': '/admin/auths/menu/add/', 'admin_url': '/admin/auths/menu/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6bfd0>, 'object_name': 'Menu'}, {'add_url': '/admin/auths/person/add/', 'admin_url': '/admin/auths/person/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c710b8>, 'object_name': 'Person'}, {'add_url': '/admin/auths/userhierarchygroup/add/', 'admin_url': '/admin/auths/userhierarchygroup/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6bcc0>, 'object_name': 'UserHierarchyGroup'}, {'add_url': '/admin/auths/userhierarchypermission/add/', 'admin_url': '/admin/auths/userhierarchypermission/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6b550>, 'object_name': 'UserHierarchyPermission'}, {'add_url': '/admin/auths/user/add/', 'admin_url': '/admin/auths/user/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6b048>, 'object_name': 'User'}]}, {'app_url': '/admin/contenttypes/', 'app_label': 'contenttypes', 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d08d94710>, 'has_module_perms': True, 'models': [{'add_url': '/admin/contenttypes/contenttype/add/', 'admin_url': '/admin/contenttypes/contenttype/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c71048>, 'object_name': 'ContentType'}]}, {'app_url': '/admin/oauth2_provider/', 'app_label': 'oauth2_provider', 'name': 'Django OAuth Toolkit', 'has_module_perms': True, 'models': [{'add_url': '/admin/oauth2_provider/accesstoken/add/', 'admin_url': '/admin/oauth2_provider/accesstoken/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6beb8>, 'object_name': 'AccessToken'}, {'add_url': '/admin/oauth2_provider/application/add/', 'admin_url': '/admin/oauth2_provider/application/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6bd30>, 'object_name': 'Application'}, {'add_url': '/admin/oauth2_provider/grant/add/', 'admin_url': '/admin/oauth2_provider/grant/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c71da0>, 'object_name': 'Grant'}, {'add_url': '/admin/oauth2_provider/refreshtoken/add/', 'admin_url': '/admin/oauth2_provider/refreshtoken/', 'perms': {'delete': True, 'change': True, 'add': True}, 'name': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d04c6bf60>, 'object_name': 'RefreshToken'}]}], 'LANGUAGE_CODE': 'en-us', 'site_header': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d08d8c438>, 'title': <django.utils.functional.lazy.<locals>.__proxy__ object at 0x7f3d08d8c7f0>}]"
+[2016-11-10 16:01:20] DEBUG [django.db.backends:89] (0.001) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "auths_user"."password", "auths_user"."last_login", "auths_user"."is_superuser", "auths_user"."username", "auths_user"."first_name", "auths_user"."last_name", "auths_user"."email", "auths_user"."is_staff", "auths_user"."is_active", "auths_user"."date_joined", "auths_user"."id", "auths_user"."last_hierarchy_id", "auths_user"."last_module_id", "auths_user"."person_id", "auths_user"."updated_at", "auths_user"."registered_by", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "auths_user" ON ("django_admin_log"."user_id" = "auths_user"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = '4c7e4779b6bd47198afbd9e574b13d0a' ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=('4c7e4779b6bd47198afbd9e574b13d0a',)
+[2016-11-10 16:02:22] WARNING [django.request:182] Not Found: /aas
+[2016-11-10 16:02:22] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'aas', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from '/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/contrib/admindocs/urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from '/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/rest_framework/urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from '/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/oauth2_provider/urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from '/home/roger/proyectos/learning/learning/ioteca_service/ioteca_service_apps/auths_api/urls.py'> (None:None) ^api/auths/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+[2016-11-10 16:02:22] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'aas', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from '/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/contrib/admindocs/urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from '/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/rest_framework/urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from '/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/oauth2_provider/urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from '/home/roger/proyectos/learning/learning/ioteca_service/ioteca_service_apps/auths_api/urls.py'> (None:None) ^api/auths/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'django.contrib.admindocs.urls' from '/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/contrib/admindocs/urls.py'> (None:None) ^admin/doc/>"
+[2016-11-10 16:02:22] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'aas', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from '/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/contrib/admindocs/urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from '/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/rest_framework/urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from '/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/oauth2_provider/urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from '/home/roger/proyectos/learning/learning/ioteca_service/ioteca_service_apps/auths_api/urls.py'> (None:None) ^api/auths/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'rest_framework.urls' from '/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/rest_framework/urls.py'> (rest_framework:rest_framework) ^api-auth/>"
+[2016-11-10 16:02:22] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'aas', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from '/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/contrib/admindocs/urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from '/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/rest_framework/urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from '/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/oauth2_provider/urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from '/home/roger/proyectos/learning/learning/ioteca_service/ioteca_service_apps/auths_api/urls.py'> (None:None) ^api/auths/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'oauth2_provider.urls' from '/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/oauth2_provider/urls.py'> (None:oauth2_provider) ^o/>"
+[2016-11-10 16:02:22] DEBUG [django.template:927] Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/core/urlresolvers.py", line 404, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.core.urlresolvers.Resolver404: {'path': 'aas', 'tried': [[<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'django.contrib.admindocs.urls' from '/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/contrib/admindocs/urls.py'> (None:None) ^admin/doc/>], [<RegexURLResolver <module 'rest_framework.urls' from '/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/rest_framework/urls.py'> (rest_framework:rest_framework) ^api-auth/>], [<RegexURLResolver <module 'oauth2_provider.urls' from '/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/oauth2_provider/urls.py'> (None:oauth2_provider) ^o/>], [<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from '/home/roger/proyectos/learning/learning/ioteca_service/ioteca_service_apps/auths_api/urls.py'> (None:None) ^api/auths/>]]}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 883, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 891, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 898, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/roger/.virtualenvs/learning/lib/python3.5/site-packages/django/template/base.py", line 905, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'ioteca_service_apps.auths_api.urls' from '/home/roger/proyectos/learning/learning/ioteca_service/ioteca_service_apps/auths_api/urls.py'> (None:None) ^api/auths/>"

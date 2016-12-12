@@ -1,0 +1,1 @@
+[2016-11-15 04:13:58] [INFO] [ioteca_service_apps.auths_api.UserView:77] [/api/auths/localuserinfo/] [127.0.0.1] [roger] User is authenticated

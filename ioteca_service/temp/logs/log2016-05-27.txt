@@ -1,0 +1,12 @@
+[2016-05-27 08:32:19] [INFO] [ioteca_service_apps.auths_api.UserView:77] [/api/auths/localuserinfo/] [127.0.0.1] [admin] User is authenticated
+[2016-05-27 10:15:00] [INFO] [ioteca_service_apps.auths_api.UserView:77] [/api/auths/localuserinfo/] [127.0.0.1] [admin] User is authenticated
+[2016-05-27 10:49:46] [INFO] [ioteca_service_apps.auths_api.UserView:77] [/api/auths/localuserinfo/] [127.0.0.1] [admin] User is authenticated
+[2016-05-27 10:51:52] [INFO] [ioteca_service_apps.auths_api.UserView:77] [/api/auths/localuserinfo/] [127.0.0.1] [admin] User is authenticated
+[2016-05-27 10:51:58] [INFO] [ioteca_service_apps.auths_api.UserView:77] [/api/auths/localuserinfo/] [127.0.0.1] [admin] User is authenticated
+[2016-05-27 10:53:32] [INFO] [ioteca_service_apps.auths_api.UserView:77] [/api/auths/localuserinfo/] [127.0.0.1] [admin] User is authenticated
+[2016-05-27 11:12:04] [INFO] [ioteca_service_apps.auths_api.UserView:77] [/api/auths/localuserinfo/] [127.0.0.1] [admin] User is authenticated
+[2016-05-27 12:03:12] [INFO] [ioteca_service_apps.auths_api.UserView:77] [/api/auths/localuserinfo/] [127.0.0.1] [admin] User is authenticated
+[2016-05-27 15:54:52] [INFO] [ioteca_service_apps.auths_api.UserView:77] [/api/auths/localuserinfo/] [127.0.0.1] [admin] User is authenticated
+[2016-05-31 09:45:06] [INFO] [ioteca_service_apps.auths_api.UserView:77] [/api/auths/localuserinfo/] [127.0.0.1] [admin] User is authenticated
+[2016-05-31 09:46:02] [INFO] [ioteca_service_apps.auths_api.UserView:77] [/api/auths/localuserinfo/] [127.0.0.1] [admin] User is authenticated
+[2016-05-31 09:46:26] [INFO] [ioteca_service_apps.auths_api.UserView:77] [/api/auths/localuserinfo/] [127.0.0.1] [admin] User is authenticated
